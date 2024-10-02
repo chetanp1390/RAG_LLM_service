@@ -1,0 +1,27 @@
+{
+    "question": "What is the base contract number?",
+    "es_index_name": "docubee-index",
+    "es_index_text_field": "body_content_field",
+    "es_model_name": ".elser_model_2",
+    "es_model_text_field": "ml.tokens",
+    "llm_instructions": "[INST]<<SYS>>You are a helpful, respectful, and honest assistant. Always answer as helpfully as possible, while being safe. Be brief in your answers. Your answers should not include any harmful, unethical, racist, sexist, toxic, dangerous, or illegal content. Please ensure that your responses are socially unbiased and positive in nature.\nIf a question does not make any sense, or is not factually coherent, explain why instead of answering something not correct. If you don\\'''t know the answer to a question, please do not share false information. <</SYS>>\nGenerate the next agent response by answering the question. You are provided several documents with titles. If the answer comes from different documents please mention all possibilities and use the tiles of documents to separate between topics or domains. Answer with no more than 150 words. If you cannot base your answer on the given document, please state that you do not have an answer.\n{context_str}<</SYS>>\n\n{query_str} Answer with no more than 150 words. If you cannot base your answer on the given document, please state that you do not have an answer. [/INST]",
+    "num_results": "3",
+    "llm_params": {
+      "model_id": "meta-llama/llama-3-70b-instruct",
+      "inputs": [],
+      "parameters": {
+        "decoding_method": "greedy",
+        "max_new_tokens": 500,
+        "min_new_tokens": 1,
+        "moderations": {
+          "hap_input": "true",
+          "hap_output": "true",
+          "threshold": 0.75
+        },
+        "repetition_penalty": 1.1,
+        "temperature": 0.7,
+        "top_k": 50,
+        "top_p": 1
+      }
+    }
+  }

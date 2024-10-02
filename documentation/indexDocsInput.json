@@ -1,0 +1,10 @@
+{
+  "bucket_name": "docubee-docs",
+  "es_index_name": "docubee-index",
+  "es_pipeline_name": "docubee-pipeline",
+  "chunk_size": "512",
+  "chunk_overlap": "256",
+  "es_model_name": ".elser_model_2",
+  "es_model_text_field": "text_field",
+  "es_index_text_field": "body_content_field"
+}

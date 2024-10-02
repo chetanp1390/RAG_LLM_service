@@ -1,0 +1,24 @@
+# Create your own APIKey/Secret for the app
+RAG_APP_API_KEY="<MAKE_YOUR_OWN_KEY>"
+
+# Go to https://www.ibm.com/docs/en/app-connect/container?topic=servers-creating-cloud-api-key 
+# for details on creating a general Cloud API Key
+IBM_CLOUD_API_KEY=""
+
+# Cloud Object Storage - used by ingestDocs
+# When you created your bucket, it should have also created a credential. To get the credential go to the COS instance, Service Credentials tab. If you don't find a bucket specific credential there, you can create one (see https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-service-credentials). Open the v next to the credential to get the details. Retrieve the following two pieces of information:
+COS_IBM_CLOUD_API_KEY=""
+COS_INSTANCE_ID=""
+# Retrieve the public endpoint in your region from the Configuration tab on your bucket.  Also make sure you have enabled your bucket to be public under the Permissions tab
+# It should be something like https://s3.us-south.cloud-object-storage.appdomain.cloud
+COS_ENDPOINT_URL=""
+
+# Watsonx.ai - used by searchLLM
+WX_URL="https://us-south.ml.cloud.ibm.com"
+# To find the watsonx.ai project, go into watsonx.ai GUI (https://dataplatform.cloud.ibm.com/wx/home), look under Projects, open the project, go to Manage->General tab. You will see the project ID.
+WX_PROJECT_ID=""
+
+# Elasticsearch connection, used by searchLLM
+WXD_URL="<url>:<port>"
+WXD_USERNAME=""
+WXD_PASSWORD=""
